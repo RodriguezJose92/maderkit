@@ -312,8 +312,7 @@ class MudiExperience{
                 document.body.querySelector('.vtex-add-to-cart-button-0-x-buttonText').parentNode.parentNode.parentNode.addEventListener('click',()=>{
                     this.sendEventInteraction('ADD TO CAR');
                 })
-            },2000),
-            document.body.querySelector('.vtex-wish-list-1-x-wishlistIconContainer').style.left=`0 !important`
+            },2000)
         )
 
     };
