@@ -2,7 +2,7 @@ if( !window.mudiExperience ){
     class MudiExperience{
 
         constructor(){
-            this.color              = "#fdae2a";
+            this.color              = "rgb(232, 91, 51)";
             this.dataSever          = null;
             this.skuNumber          = null;
             this.fatherContainer    = null;
@@ -244,7 +244,7 @@ if( !window.mudiExperience ){
             const 
             tooltip = document.createElement('P');
             tooltip.classList.add('tooltipMudiCDN');
-            tooltip.innerHTML=`<b>¡Nuevo!</b> Descubre como se ve este producto en 3D y realidad aumentada en tu espacio`;
+            tooltip.innerHTML=`<b>¡Nuevo!</b> Descubre como se ve este producto en <b>3D y realidad aumentada</b> en tu espacio`;
     
             setTimeout(()=>{
                 document.body.querySelector('.tooltipMudiCDN').remove();
