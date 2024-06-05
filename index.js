@@ -339,12 +339,16 @@ function verifySKU(){
     }
 
     pathActual = window.location.href;
-    setTimeout  (()=>{
-        let skuNumber = document.body.querySelector('.skuIDMudi').innerHTML
-        window.mudiExperience.experienceOn( skuNumber , document.body.querySelector('.vtex-store-components-3-x-productImagesContainer') );
-        console.log('cambio el sku')
-        requestAnimationFrame(verifySKU)
-    },2000)
-
+    if(pathActual.includes('?skuId')){
+        setTimeout  (()=>{
+            let skuNumber = document.body.querySelector('.skuIDMudi').innerHTML
+            window.mudiExperience.experienceOn( skuNumber , document.body.querySelector('.vtex-store-components-3-x-productImagesContainer') );
+            console.log('cambio el sku')
+            requestAnimationFrame(verifySKU);
+            return;
+        },2000)
+    }
+    
+    else requestAnimationFrame(verifySKU)
 }
 
