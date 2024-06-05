@@ -340,10 +340,11 @@ function verifySKU(){
 
     pathActual = window.location.href;
     setTimeout  (()=>{
-        window.mudiExperience.experienceOn( document.body.querySelector('.skuIDMudi').innerHTML , document.body.querySelector('.vtex-store-components-3-x-productImagesContainer') );
+        let skuNumber = document.body.querySelector('.skuIDMudi').innerHTML
+        window.mudiExperience.experienceOn( skuNumber , document.body.querySelector('.vtex-store-components-3-x-productImagesContainer') );
         console.log('cambio el sku')
         requestAnimationFrame(verifySKU)
-    },1000)
+    },2000)
 
 }
 
