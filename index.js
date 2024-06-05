@@ -68,7 +68,7 @@ if( !window.mudiExperience ){
                     <defs>
                         <style>
                             .cls-1{
-                                fill:${this.color};
+                                fill:#fdae2a;
                                 opacity:.6;
                             }
                             
