@@ -274,7 +274,9 @@ class MudiExperience{
     /** verifyExperience  ✔️ */
     async experienceOn(skuNumber, fatherContainer){
     
+        
         fatherContainer && (this.fatherContainer = fatherContainer);
+        this.skuNumber = skuNumber;
 
         /** Response Mudi server */
         await this.conectServer(skuNumber);
@@ -320,5 +322,28 @@ class MudiExperience{
 };
 
 const mudiExperience = new MudiExperience();
-mudiExperience.experienceOn(7706112016085, document.body.querySelector('.vtex-store-components-3-x-productImage') )
+window.mudiExperience = mudiExperience;
+
+let pathActual = window.location.href;
+
+setTimeout(()=>{
+    mudiExperience.experienceOn( document.body.querySelector('.skuIDMudi').innerHTML , document.body.querySelector('.vtex-store-components-3-x-productImagesContainer') );
+    verifySKU()
+},2000)
+
+function verifySKU(){
+    
+    if( pathActual == window.location.href ){
+        requestAnimationFrame(verifySKU);
+        return;
+    }
+
+    pathActual = window.location.href;
+    setTimeout  (()=>{
+        window.mudiExperience.experienceOn( document.body.querySelector('.skuIDMudi').innerHTML , document.body.querySelector('.vtex-store-components-3-x-productImagesContainer') );
+        console.log('cambio el sku')
+        requestAnimationFrame(verifySKU)
+    },1000)
+
+}
 
