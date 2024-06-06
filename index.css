@@ -124,17 +124,18 @@
 
 .containerQRMudi {
     position: absolute;
-    top: 110%;
+    top: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 200px;
+    width: 300px;
     right: -150%;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 0px;
     color: white;
     transition: all .2s ease-in-out;
+    scale: .9
 }
 
 .mudiQR {
@@ -142,7 +143,7 @@
     margin: 0 auto;
     padding: 10px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 .titleContainer:first-child {
@@ -156,11 +157,14 @@
 .titleContainer:first-child h4 {
     margin: 20px 0px 0px 0px;
     text-align: center;
+    font-size:20px;
 }
 
 .titleContainer:first-child hr {
-    width: 100%;
-    margin: 0px 0px 2px 0px;
+    width: 75%;
+    margin: -7px 0px 2px 0px;
+    outline: none;
+    border: white solid 1px;
 }
 
 .containerText {
@@ -197,12 +201,12 @@
 @media screen and (min-width:1400px) and (max-width:1700px) {
     .containerQRMudi {
         position: absolute;
-        top: 70%;
+        top: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 200px;
+        width: 300px;
         right: -150%;
         padding: 20px;
         border-radius: 10px;
@@ -215,12 +219,12 @@
 @media screen and (min-width:1100px) and (max-width:1399px) {
     .containerQRMudi {
         position: absolute;
-        top: 30%;
+        top: 10%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 230px;
+        width: 300px;
         right: -150%;
         padding: 20px;
         border-radius: 10px;
