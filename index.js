@@ -2,7 +2,7 @@ if( !window.mudiExperience ){
     class MudiExperience{
 
         constructor(){
-            this.color              = "rgb(232, 91, 51)";
+            this.color              = "#fdae2a";
             this.dataSever          = null;
             this.skuNumber          = null;
             this.fatherContainer    = null;
