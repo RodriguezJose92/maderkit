@@ -123,7 +123,7 @@ if( !window.mudiExperience ){
                         <defs>
                             <style>
                             .cls-1_modal{fill:${this.color};stroke:${this.color};stroke-miterlimit:10;stroke-width:3px;}
-                            .cls-2_modal{font-family:FrutigerBold, Frutiger;font-size:19.04px;fill:white}
+                            .cls-2_modal{font-size:19.04px;fill:white}
                             .cls-3_modal{stroke-width:0px;fill:white;}
                             </style>
                         </defs>
@@ -209,7 +209,7 @@ if( !window.mudiExperience ){
                         flagAR = !flagAR
                     )
                     : (
-                        document.body.querySelector('.containerQRMudi').style.right="-150%",
+                        document.body.querySelector('.containerQRMudi').style.right="-300%",
                         changeStyleBtnAR(flagAR,this.color),
                         flagAR = !flagAR
                     )
