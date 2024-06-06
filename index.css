@@ -130,7 +130,7 @@
     align-items: center;
     flex-direction: column;
     width: 300px;
-    right: -150%;
+    right: -300%;
     padding: 20px;
     border-radius: 0px;
     color: white;
@@ -207,7 +207,7 @@
         align-items: center;
         flex-direction: column;
         width: 300px;
-        right: -150%;
+        right: -300%;
         padding: 20px;
         border-radius: 10px;
         color: white;
@@ -225,7 +225,7 @@
         align-items: center;
         flex-direction: column;
         width: 300px;
-        right: -150%;
+        right: -300%;
         padding: 20px;
         border-radius: 10px;
         color: white;
