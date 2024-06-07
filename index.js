@@ -2,7 +2,7 @@ if( !window.mudiExperience ){
     class MudiExperience{
 
         constructor(){
-            this.color              = "rgb(232, 91, 51)";
+            this.color              = "#fdae2a";
             this.dataSever          = null;
             this.skuNumber          = null;
             this.fatherContainer    = null;
@@ -123,12 +123,12 @@ if( !window.mudiExperience ){
                         <defs>
                             <style>
                             .cls-1_modal{fill:${this.color};stroke:${this.color};stroke-miterlimit:10;stroke-width:3px;}
-                            .cls-2_modal{font-family:FrutigerBold, Frutiger;font-size:19.04px;fill:white}
+                            .cls-2_modal{font-size:19.04px;fill:white}
                             .cls-3_modal{stroke-width:0px;fill:white;}
                             </style>
                         </defs>
                         
-                        <rect class="cls-1_modal" x="9.52" y="9" width="292.07" height="87" rx="40" ry="40"/>
+                        <rect class="cls-1_modal" x="9.52" y="9" width="292.07" height="87" rx="0" ry="0"/>
                             <path class="cls-3_modal" d="m42.64,46.07c.66,0,1.19-.53,1.19-1.19v-8.1c0-.66-.53-1.19-1.19-1.19s-1.19.53-1.19,1.19v8.04c0,.66.53,1.19,1.19,1.19"/>
                             <path class="cls-3_modal" d="m59.58,28.25c.21,0,.42-.06.6-.16l6.4-3.67,6.4,3.68c.57.33,1.31.13,1.64-.44.33-.57.13-1.31-.44-1.64h0l-7.13-4.01c-.37-.21-.83-.21-1.19,0l-6.94,4.02c-.57.34-.75,1.07-.41,1.64.23.38.64.6,1.08.58"/>
                             <path class="cls-3_modal" d="m66.5,59.88c.66,0,1.19-.53,1.19-1.19v-8.03c0-.66-.54-1.2-1.2-1.2s-1.2.54-1.2,1.2v8.04c0,.66.53,1.19,1.19,1.19"/>
@@ -204,12 +204,12 @@ if( !window.mudiExperience ){
                 if(window.innerWidth>1000){
                     !flagAR 
                     ? (
-                        document.body.querySelector('.containerQRMudi').style.right="15%",
+                        document.body.querySelector('.containerQRMudi').style.right="0%",
                         changeStyleBtnAR(flagAR,this.color),
                         flagAR = !flagAR
                     )
                     : (
-                        document.body.querySelector('.containerQRMudi').style.right="-150%",
+                        document.body.querySelector('.containerQRMudi').style.right="-300%",
                         changeStyleBtnAR(flagAR,this.color),
                         flagAR = !flagAR
                     )
