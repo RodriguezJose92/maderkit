@@ -244,7 +244,7 @@ if( !window.mudiExperience ){
             const 
             tooltip = document.createElement('P');
             tooltip.classList.add('tooltipMudiCDN');
-            tooltip.innerHTML=`<b>¡Nuevo!</b> Descubre como se ve este producto en <b>3D y realidad aumentada</b> en tu espacio`;
+            tooltip.innerHTML=`<b>¡Nuevo!</b> Descubre como se ve este producto en tu espacio`;
     
             setTimeout(()=>{
                 document.body.querySelector('.tooltipMudiCDN').remove();
