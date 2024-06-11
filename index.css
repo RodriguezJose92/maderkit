@@ -31,12 +31,12 @@
     background-color: #cfcdcf;
     color: black;
     font-family: sans-serif;
-    width: 360px;
-    font-size: 14px;
+    width: 270px;
+    font-size: 15px;
     padding: 13px 13px;
     text-align: center;
     position: absolute;
-    top: -75%;
+    top: -80%;
     right: 0%;
     filter: drop-shadow(3px 5px 5px rgba(10, 10, 10, 0.196));
 }
@@ -258,7 +258,7 @@
         background-color: #cfcdcf;
         color: black;
         font-family: sans-serif;
-        width: 320px;
+        width: 270px;
         font-size: 14px;
         padding: 13px 13px;
         text-align: center;
