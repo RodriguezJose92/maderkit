@@ -275,6 +275,7 @@ if( !window.mudiExperience ){
         /** verifyExperience  ✔️ */
         async experienceOn(skuNumber, fatherContainer){
         
+            document.body.querySelector('.flex.flex-column.undefined').style.display="none";
             
             fatherContainer && (this.fatherContainer = fatherContainer);
             this.skuNumber = skuNumber;
